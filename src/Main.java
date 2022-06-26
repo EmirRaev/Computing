@@ -28,11 +28,11 @@ public class Main {
             PCs.add(new PC(random.nextInt(1000 - 300) + 300, models[random.nextInt(models.length)], random.nextInt(27 - 19) + 19));
             //Добавляет новый элемент в конец списка PCs, рандомятся: price, Model(спомощью объекта random), diagonal
         }
-        System.out.println(totalPrice((ArrayList<ComputingMachinery>) noteBooks) + totalPrice((ArrayList<ComputingMachinery>) PCs));
+        System.out.println("Цена ноутбуков: " + totalPrice((ArrayList<ComputingMachinery>) noteBooks) + "\nЦена компьютеров: " + totalPrice((ArrayList<ComputingMachinery>) PCs));
         //sout( цена всех ComputingMachinery = метод totalPrice(noteBooks преобразование в тип ArrayList<ComputingMachinery> для totalPrice))
         setDiscount((ArrayList<ComputingMachinery>) noteBooks, 20);
-        setDiscount((ArrayList<ComputingMachinery>) PCs, 20);
-        System.out.println(totalPrice((ArrayList<ComputingMachinery>) noteBooks) + totalPrice((ArrayList<ComputingMachinery>) PCs));
+
+        System.out.println("Цена ноутбуков: " + totalPrice((ArrayList<ComputingMachinery>) noteBooks) + "\nЦена компьютеров: " + totalPrice((ArrayList<ComputingMachinery>) PCs));
         //sout( цена всех ComputingMachinery = метод totalPrice(noteBooks преобразование в тип ArrayList<ComputingMachinery> для totalPrice))(с учетом скидки)
         search((ArrayList<ComputingMachinery>) PCs, Model.ASUS, 600, 400);
     }
